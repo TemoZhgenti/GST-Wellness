@@ -9,7 +9,29 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 }
- @media (max-width: 768px) {
+  /* ---- YOUR EXISTING STYLES ABOVE ---- */
+
+/* --- MOBILE FIXES (place at the end) --- */
+@media (max-width: 768px) {
+
+  /* Move hero content 2 lines down */
+  .container {
+    padding-top: 16rem; /* adjust to your preference */
+  }
+
+  /* Fix hero height and video background */
+  .hero {
+    min-height: 100vh; /* or var(--vh) if you added JS fix */
+    margin-top: 0;
+  }
+
+  .video-bg {
+    position: absolute; /* so it scrolls with content on mobile */
+  }
+
+}
+    
+    @media (max-width: 768px) {
 
   /* Make overall content smaller */
   body {
@@ -70,7 +92,7 @@ body {
     height: 100vh;
     font-family: 'Inter', sans-serif;
     color: #fff;
-    overflow: hidden;
+    overflow-y: auto;
 }
 
 /* VIDEO BACKGROUND */
