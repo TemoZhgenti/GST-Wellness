@@ -8,7 +8,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+}
  @media (max-width: 768px) {
+
+  /* Make overall content smaller */
+  body {
+    font-size: 14px;
+  }
 
   /* Main title */
   h1 {
@@ -21,12 +27,14 @@
     font-size: 13px;
   }
 
-  /* Cards container spacing */
+  /* Cards container (stack them) */
   .cards {
+    flex-direction: column;
+    align-items: center;
     gap: 15px;
   }
 
-  /* Cards themselves */
+  /* Cards smaller */
   .card {
     width: 85%;
     padding: 15px;
@@ -43,7 +51,7 @@
     font-size: 12px;
   }
 
-  /* Reduce overall spacing */
+  /* Reduce spacing around section */
   .hero {
     padding: 30px 15px;
   }
