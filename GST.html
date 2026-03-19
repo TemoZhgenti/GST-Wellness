@@ -8,40 +8,47 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
-    @media (max-width: 768px) {
-  .cards {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-    @media (max-width: 768px) {
-  .card {
-    width: 90%;
-    margin-bottom: 20px;
-  }
-}
-    @media (max-width: 768px) {
+ @media (max-width: 768px) {
+
+  /* Main title */
   h1 {
-    font-size: 28px;
-    text-align: center;
+    font-size: 24px;
+    line-height: 1.2;
   }
 
+  /* Subtitle */
   p {
-    font-size: 14px;
-    text-align: center;
+    font-size: 13px;
   }
-}
-    @media (max-width: 768px) {
-  .hero {
-    padding: 40px 20px;
+
+  /* Cards container spacing */
+  .cards {
+    gap: 15px;
   }
-}
-    @media (max-width: 768px) {
-  .language-switch {
+
+  /* Cards themselves */
+  .card {
+    width: 85%;
+    padding: 15px;
+    border-radius: 15px;
+  }
+
+  /* Card titles */
+  .card h2 {
+    font-size: 18px;
+  }
+
+  /* Card text */
+  .card p {
     font-size: 12px;
-    right: 10px;
-    top: 10px;
   }
+
+  /* Reduce overall spacing */
+  .hero {
+    padding: 30px 15px;
+  }
+
+}
 }
     body {
   background-size: cover;
